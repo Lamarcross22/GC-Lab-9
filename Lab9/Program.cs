@@ -35,7 +35,9 @@ namespace Lab9
 
             for (int i = 0; i < classList.Length; i++)
             {
+
                 classList[i] = new student();
+
             }
 
             classList[0].name = "William Twomey";
