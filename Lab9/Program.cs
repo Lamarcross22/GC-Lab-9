@@ -163,50 +163,7 @@ namespace Lab9
 
             return classList;
 
-        }
-
-        //static bool ValidEntry(string input, string affirmative, string negative, string reentryPrompt)
-        //{
-
-        //    string affirm = "^" + affirmative.Substring(0, 1) + "$";
-        //    string negat = "^"+ negative.Substring(0,1) + "$";
-        //    affirmative = "^" + affirmative + "$";
-        //    negative = "^" + negative + "$";
-
-        //    while (true)
-        //    {
-
-        //        if (Regex.IsMatch(input, affirmative) || Regex.IsMatch(input, affirm))
-        //        {
-
-        //            return true;
-
-        //        }
-
-        //        else if (Regex.IsMatch(input, negative) || Regex.IsMatch(input, negat))
-        //        {
-
-        //            return false;
-
-        //        }
-
-        //        else
-        //        {
-
-        //            Console.WriteLine("Expression invalid." + reentryPrompt);
-
-        //            try
-        //            {
-
-        //                input = Console.ReadLine();
-
-        //            }
-
-        //        }
-
-        //    }
-
-        //}
+        }        
 
         static bool KeepLearning()
         {
@@ -239,7 +196,7 @@ namespace Lab9
                     else
                     {
 
-                        Console.WriteLine("An unexpected error has occured, but the show must go on!");
+                        Console.WriteLine("Error! ID: 10-T.");
                         Console.WriteLine("This time follow the prompt.");
 
                     }
@@ -301,7 +258,7 @@ namespace Lab9
 
                     output = int.Parse(Console.ReadLine()) - 1;
 
-                    if (output <= length || output >= 1)
+                    if (output <= length && output >= 1)
                     {
 
                         //Console.WriteLine($"You have selected {roster[output]}!");
@@ -311,7 +268,7 @@ namespace Lab9
                     else
                     {
 
-                        //Console.WriteLine("An unexpected error has occured, but the show must go on!");
+                        Console.WriteLine("Error! ID: 10-T.");
                         Console.WriteLine("This time follow the prompt.");
 
                     }
@@ -377,7 +334,7 @@ namespace Lab9
                     if (ind == -1)
                     {
 
-                        Console.WriteLine("An unexpected error has occured, but the show must go on!");
+                        Console.WriteLine("Error! ID: 10-T.");
                         Console.WriteLine("This time follow the prompt.");
 
                     }
@@ -398,7 +355,7 @@ namespace Lab9
 
                 Console.Write("Please enter: ");
 
-                for (int i = 0; i < subject.infoName.Count - 2; i++)
+                for (int i = 0; i < subject.infoName.Count - 1; i++)
                 {
 
                     Console.Write($"{subject.infoName[i]}, ");
@@ -442,7 +399,7 @@ namespace Lab9
                     else
                     {
 
-                        Console.WriteLine("An unexpected error has occured, but the show must go on!");
+                        Console.WriteLine("Error! ID: 10-T.");
                         Console.WriteLine("This time follow the prompt.");
 
                     }
@@ -463,7 +420,7 @@ namespace Lab9
 
                 }
 
-                Console.WriteLine("Please enter Y or N: ");
+                Console.WriteLine("Please enter L or A: ");
 
             } while (!whileBreak);
 
@@ -502,7 +459,7 @@ namespace Lab9
                     else
                     {
 
-                        Console.WriteLine("An unexpected error has occured, but the show must go on!");
+                        Console.WriteLine("Error! ID: 10-T.");
                         Console.WriteLine("This time follow the prompt.");
 
                     }
