@@ -165,6 +165,49 @@ namespace Lab9
 
         }
 
+        //static bool ValidEntry(string input, string affirmative, string negative, string reentryPrompt)
+        //{
+
+        //    string affirm = "^" + affirmative.Substring(0, 1) + "$";
+        //    string negat = "^"+ negative.Substring(0,1) + "$";
+        //    affirmative = "^" + affirmative + "$";
+        //    negative = "^" + negative + "$";
+
+        //    while (true)
+        //    {
+
+        //        if (Regex.IsMatch(input, affirmative) || Regex.IsMatch(input, affirm))
+        //        {
+
+        //            return true;
+
+        //        }
+
+        //        else if (Regex.IsMatch(input, negative) || Regex.IsMatch(input, negat))
+        //        {
+
+        //            return false;
+
+        //        }
+
+        //        else
+        //        {
+
+        //            Console.WriteLine("Expression invalid." + reentryPrompt);
+
+        //            try
+        //            {
+
+        //                input = Console.ReadLine();
+
+        //            }
+
+        //        }
+
+        //    }
+
+        //}
+
         static bool KeepLearning()
         {
 
