@@ -508,8 +508,50 @@ namespace Lab9
                 Console.WriteLine("Please enter the fact itself: ");
                 temp.infoBody.Add(Console.ReadLine());
 
-                Console.WriteLine("Would you like to add another fact?");
-                cont = Char.Parse(Console.ReadLine().ToLower());
+                bool whileBreak = false;
+
+                do
+                {
+
+                    try
+                    {
+
+                        Console.WriteLine("Would you like to add another fact? (Y/N)");
+                        cont = Char.Parse(Console.ReadLine().ToLower());
+                        if (cont == 'y' || cont == 'n')
+                        {
+
+                            whileBreak = true;
+
+                        }
+                        else
+                        {
+
+                            Console.WriteLine("Y or N please.");
+
+                        }
+
+                    }
+                    catch(FormatException)
+                    {
+
+                        Console.WriteLine("Nice format exception! Try a single digit next time.");
+
+                    }
+                    catch(NullReferenceException)
+                    {
+
+                        Console.WriteLine("CTRL+Z isn't funny anymore.");
+
+                    }
+                    catch(Exception e)
+                    {
+
+                        Console.WriteLine("An unknown error occured: " + e);
+
+                    }
+                    
+                } while (whileBreak);                                
 
             } while (cont == 'y');
 
@@ -531,8 +573,50 @@ namespace Lab9
                 Console.WriteLine("Please enter the fact itself: ");
                 subject.infoBody.Add(Console.ReadLine());
 
-                Console.WriteLine("Would you like to add another fact?");
-                cont = Char.Parse(Console.ReadLine().ToLower());
+                bool whileBreak = false;
+
+                do
+                {
+
+                    try
+                    {
+
+                        Console.WriteLine("Would you like to add another fact? (Y/N)");
+                        cont = Char.Parse(Console.ReadLine().ToLower());
+                        if (cont == 'y' || cont == 'n')
+                        {
+
+                            whileBreak = true;
+
+                        }
+                        else
+                        {
+
+                            Console.WriteLine("Y or N please.");
+
+                        }
+
+                    }
+                    catch (FormatException)
+                    {
+
+                        Console.WriteLine("Nice format exception! Try a single digit next time.");
+
+                    }
+                    catch (NullReferenceException)
+                    {
+
+                        Console.WriteLine("CTRL+Z isn't funny anymore.");
+
+                    }
+                    catch (Exception e)
+                    {
+
+                        Console.WriteLine("An unknown error occured: " + e);
+
+                    }
+
+                } while (whileBreak);
 
             } while (cont == 'y');
 
